@@ -1,0 +1,15 @@
+name: liquid_dbmonster
+version: 0.0.1
+description: Liquid DBMonster Benchmark
+environment:
+  sdk: '>=1.0.0 <2.0.0'
+dependencies:
+  browser: any
+  liquid: any
+transformers:
+- liquid
+- $dart2js:
+    checked: false
+    minify: true
+    commandLineOptions: ['--trust-type-annotations', '--trust-primitives']
+    
